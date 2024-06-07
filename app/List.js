@@ -27,6 +27,20 @@ const List = () => {
                     문제풀기
                 </Link>
             </TouchableOpacity>
+            <TouchableOpacity>
+                <Link 
+                    style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
+                    href='./JSJ/App'>
+                    문제풀기
+                </Link>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Link 
+                    style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
+                    href='./PJH/App'>
+                    문제풀기
+                </Link>
+            </TouchableOpacity>
         </Container>
     );
 };
