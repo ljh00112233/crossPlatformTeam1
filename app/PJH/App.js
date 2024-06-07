@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView, SafeAreaView } from "react-native";
 import Quiz from "./components/Quiz";
 import styles from "./styles";
 import { useEffect, useState } from "react";
+import MyButton from '../MyButton';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Quiz questionCount={9} questionSum={620} />
           <Quiz questionCount={7} questionSum={200} />
           <Quiz questionCount={10} questionSum={510} />
+          <MyButton name={'../List'}></MyButton>
         </View>
       </ScrollView>
     </SafeAreaView>
