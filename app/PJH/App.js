@@ -22,7 +22,6 @@ function App() {
           <Quiz questionCount={10} questionSum={510} />
         </View>
       </ScrollView>
-
     </SafeAreaView>
   );
 }
