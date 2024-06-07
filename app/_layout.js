@@ -51,10 +51,6 @@ export default function RootLayout() {
                 headerTitle: '문제',
             }}
             />
-            <Stack.Screen name='JSJ/SelectionGrid' options={{
-                headerTitle: '문제',
-            }}
-            />
             <Stack.Screen name='PJH/App' options={{
                 headerTitle: '문제',
             }}

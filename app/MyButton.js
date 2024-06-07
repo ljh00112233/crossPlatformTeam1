@@ -6,7 +6,7 @@ const MyButton = (props) => {
     return(
         <TouchableOpacity
             style = {{
-                padding: 15,
+                padding: 10,
                 margin: 2,
                 backgroundColor: 'blue',
                 borderRadius: 9,
@@ -15,7 +15,7 @@ const MyButton = (props) => {
             }}
             onPress={() => {router.replace(props.name);}}
         >
-            <Text style = {{color: 'white', fontSize: 24}}>다음문제</Text>
+            <Text style = {{color: 'white', fontSize: 18}}>다음문제</Text>
         </TouchableOpacity>
     );
 };

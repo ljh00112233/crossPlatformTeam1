@@ -5,7 +5,7 @@ import { Text, View,ScrollView } from 'react-native';
 import { viewStyles } from "./styles";
 import Input_name from './nameInput'
 import Input_price from './priceInput';
-import MyButton from '../../MyButton'
+import MyButton from '../../MyButton';
 
 const Container = styled.SafeAreaView`
     flex: 1;
@@ -157,7 +157,7 @@ const Home = () => {
                         price={b}
                     />
                 </View>
-                {QText !== '' && QText1 !== '' && <MyButton name={'../../List'}></MyButton>}
+                {QText !== '' && QText1 !== '' && <MyButton name={'../../JSJ/App'}></MyButton>}
                 
             </Container>
             </ScrollView>

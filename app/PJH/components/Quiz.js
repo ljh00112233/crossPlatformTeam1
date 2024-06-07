@@ -31,7 +31,7 @@ function Quiz({ questionCount, questionSum }) {
     <View style={styles.quiz}>
       <View style={styles.answer}>
         <Text style={styles.textAnswer}>
-          ▶ 동전 {questionCount}개로 {questionSum}원 만들기 (동전 개수:{" "}
+          ▶ 동전 {questionCount}개로 {questionSum}원 만들기{"\n\n"} (동전 개수:{" "}
           <Text style={countSum == questionCount ? styles.colorGreen : styles.colorRed}>{countSum}</Text>
           개, 합계: <Text style={amountSum == questionSum ? styles.colorGreen : styles.colorRed}>{amountSum}</Text>)
         </Text>

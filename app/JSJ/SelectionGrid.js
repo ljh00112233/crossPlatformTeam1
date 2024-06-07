@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, Button, Text } from 'react-native';
-import ImageCard from './ImageCard';
+import ImageCard from './ImageCrad';
 
 const images = [
   { src: require('./assets/images/blackboard.png'), alt: '칠판', correct: '칠판' },
