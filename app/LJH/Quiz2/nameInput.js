@@ -19,11 +19,11 @@ const Input = ({ placeholder, value, onChangeText, martName, price }) => {
 
     useEffect(() => {
         if(martName == 0){
-            setK('hana');
+            setK('하나마트');
         }else if(martName == 1){
-            setK('so');
+            setK('소망마트');
         }else{
-            setK('si');
+            setK('싱싱마트');
         };
     },[]);
 
