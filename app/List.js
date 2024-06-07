@@ -13,32 +13,39 @@ const Container = styled.View`
 const List = () => {
     return (
         <Container>
-            <TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
                 <Link 
                     style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
                     href='./LJH/Quiz1/Quiz1'>
-                    문제풀기
+                    A단계 1_3
                 </Link>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
                 <Link 
                     style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
                     href='./LJH/Quiz2/Quiz2'>
-                    문제풀기
+                    A단계 2_5
                 </Link>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
                 <Link 
                     style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
                     href='./JSJ/App'>
-                    문제풀기
+                    A단계 1_7
                 </Link>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
                 <Link 
                     style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
                     href='./PJH/App'>
-                    문제풀기
+                    A단계 2_61
+                </Link>
+            </TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
+                <Link 
+                    style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
+                    href='./LJH/Quiz1/Quiz1'>
+                    전체문제풀기
                 </Link>
             </TouchableOpacity>
         </Container>

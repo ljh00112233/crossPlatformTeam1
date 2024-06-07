@@ -1,14 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import SelectionGrid from './SelectionGrid';
-import MyButton from '../MyButton';
+import MyButton from '../MyButton_next';
+import MyButtonPrev from '../MyButton_prev';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>직업사진 기억하기</Text>
       <SelectionGrid />
-      <MyButton name={'../PJH/App'}></MyButton>
+      <View style={{flexDirection: 'row'}}>
+        <MyButtonPrev name={'../List'}></MyButtonPrev>
+        <MyButton name={'../../JSJ/App'}></MyButton>
+      </View>
     </View>
   );
 }

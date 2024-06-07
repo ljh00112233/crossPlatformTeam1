@@ -5,7 +5,8 @@ import { Text, View,ScrollView } from 'react-native';
 import { viewStyles } from "./styles";
 import Input_name from './nameInput'
 import Input_price from './priceInput';
-import MyButton from '../../MyButton';
+import MyButton from '../../MyButton_next';
+import MyButtonPrev from '../../MyButton_prev';
 
 const Container = styled.SafeAreaView`
     flex: 1;
@@ -74,7 +75,7 @@ const Home = () => {
         <ThemeProvider theme={theme}>
             <ScrollView>
             <Container>
-                {console.log(b)}    
+                {console.log(b)}
                 <View>
                     <Text style={viewStyles.text}>정답 입력후</Text>
                 </View>
@@ -157,8 +158,10 @@ const Home = () => {
                         price={b}
                     />
                 </View>
-                {QText !== '' && QText1 !== '' && <MyButton name={'../../JSJ/App'}></MyButton>}
-                
+                <View style={{flexDirection: 'row'}}>
+                    {QText !== '' && QText1 !== '' && <MyButtonPrev name={'../../List'}></MyButtonPrev>}
+                    {QText !== '' && QText1 !== '' && <MyButton name={'../../JSJ/App'}></MyButton>}
+                </View>
             </Container>
             </ScrollView>
         </ThemeProvider>

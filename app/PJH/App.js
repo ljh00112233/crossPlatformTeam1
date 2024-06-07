@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, ScrollView, SafeAreaView } from "react-native";
 import Quiz from "./components/Quiz";
 import styles from "./styles";
 import { useEffect, useState } from "react";
-import MyButton from '../MyButton';
+import MyButton from '../MyButton_next';
+import MyButtonPrev from '../MyButton_prev';
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
           <Quiz questionCount={9} questionSum={620} />
           <Quiz questionCount={7} questionSum={200} />
           <Quiz questionCount={10} questionSum={510} />
-          <MyButton name={'../List'}></MyButton>
+          <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+            <MyButtonPrev name={'../List'}></MyButtonPrev>
+            <MyButton name={'./App'}></MyButton>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
