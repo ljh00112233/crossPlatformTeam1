@@ -20,11 +20,11 @@ export default function RootLayout() {
             headerTitleAlign: 'center',
         }}>
             <Stack.Screen name='index' options={{
-                headerTitle: '문제풀기',
+                headerTitle: '문제선택',
             }}
             />
             <Stack.Screen name='LJH/Quiz1/Quiz1' options={{
-                headerTitle: '문제',
+                headerTitle: 'A단계 1_3_이진혁',
             }}
             />
             <Stack.Screen name='LJH/Quiz1/Item' options={{
@@ -40,19 +40,19 @@ export default function RootLayout() {
             }}
             />
             <Stack.Screen name='LJH/Quiz2/Quiz2' options={{
-                headerTitle: '문제',
-            }}
-            />
-            <Stack.Screen name='LJH/Quiz2/Home' options={{
-                headerTitle: '문제',
+                headerTitle: 'A단계 2_5_이진혁',
             }}
             />
             <Stack.Screen name='JSJ/App' options={{
-                headerTitle: '문제',
+                headerTitle: 'A단계 1_7_장성주',
             }}
             />
             <Stack.Screen name='PJH/App' options={{
-                headerTitle: '문제',
+                headerTitle: 'A단계 2_61_박재휘',
+            }}
+            />
+            <Stack.Screen name='HSD/Home' options={{
+                headerTitle: 'A단계 2_61_홍성돈',
             }}
             />
         </Stack>

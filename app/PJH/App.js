@@ -24,7 +24,7 @@ function App() {
           <Quiz questionCount={10} questionSum={510} />
           <View style={{flexDirection: 'row', justifyContent: 'center'}}>
             <MyButtonPrev name={'../List'}></MyButtonPrev>
-            <MyButton name={'./App'}></MyButton>
+            <MyButton name={'../HSD/Home'}></MyButton>
           </View>
         </View>
       </ScrollView>

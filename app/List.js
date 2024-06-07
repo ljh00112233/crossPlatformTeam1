@@ -44,6 +44,13 @@ const List = () => {
             <TouchableOpacity style={{margin:10}}>
                 <Link 
                     style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
+                    href='./HSD/Home'>
+                    A단계 2_61
+                </Link>
+            </TouchableOpacity>
+            <TouchableOpacity style={{margin:10}}>
+                <Link 
+                    style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
                     href='./LJH/Quiz1/Quiz1'>
                     전체문제풀기
                 </Link>

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components/native";
 import { Text, Image, View, TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
+import MyButton from '../MyButton_next';
+import MyButtonPrev from '../MyButton_prev';
 
 const Container = styled.View`
   flex: 1;
@@ -87,9 +89,11 @@ const Home = () => {
         </ImageContainer>
       </Column>
     </Row>
+    <View style={{flexDirection: 'row'}}>
+        <MyButtonPrev name={'../List'}></MyButtonPrev>
+    </View>
     </Container>
   );
 };
 
 export default Home;
-
