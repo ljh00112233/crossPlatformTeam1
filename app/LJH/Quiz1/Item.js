@@ -16,10 +16,10 @@ const Container = styled.View`
 const Item = () => {
     const [a, setA] = useState(0);
 
-    const [newTask, setNewTask] = useState('');
+    const [problem, setProblem] = useState('');
 
     const _handleTextChange = text => {
-        setNewTask(text);
+        setProblem(text);
     };
 
     const _correct = () => {
@@ -28,9 +28,9 @@ const Item = () => {
             '',
             [{text: '확인', onPress: () => {
                 if(a===8){
-                    router.replace('/List'); //문제 끝 다음 넘어감
+                    router.replace('../Quiz2/Quiz2'); //문제 끝 다음 넘어감
                 }else{
-                    {setA(a+1); setNewTask('');}
+                    {setA(a+1); setProblem('');}
                 }
             }   
             }],
@@ -44,9 +44,9 @@ const Item = () => {
             `${allJob[a].name.toString()}`,
             [{text: '확인', onPress: () => {
                 if(a===8){
-                    router.replace('/List'); //문제 끝 다음 넘어감
+                    router.replace('../Quiz2/Quiz2'); //문제 끝 다음 넘어감
                 }else{
-                    {setA(a+1); setNewTask('');}
+                    {setA(a+1); setProblem('');}
                 }
             }   
             }],
@@ -55,7 +55,7 @@ const Item = () => {
     };
 
     const _judge = () => {
-        if(newTask === allJob[a].name.toString()){
+        if(problem === allJob[a].name.toString()){
             _correct();
         }else{
             _wrong();
@@ -69,7 +69,7 @@ const Item = () => {
             {/* <Text>{Job[a].name.toString()}</Text> */}
             <Input 
                 placeholder='정답을 입력하세요!' 
-                value={newTask}
+                value={problem}
                 onChangeText={_handleTextChange}
                 onSubmitEditing={_judge}
             />

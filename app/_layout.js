@@ -39,6 +39,14 @@ export default function RootLayout() {
                 headerTitle: '3초 뒤 돌아갑니다',
             }}
             />
+            <Stack.Screen name='LJH/Quiz2/Quiz2' options={{
+                headerTitle: '문제',
+            }}
+            />
+            <Stack.Screen name='LJH/Quiz2/Home' options={{
+                headerTitle: '문제',
+            }}
+            />
         </Stack>
     )
 }

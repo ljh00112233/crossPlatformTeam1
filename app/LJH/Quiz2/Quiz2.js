@@ -9,7 +9,7 @@ const Container = styled.SafeAreaView`
     justify-content: center;
 `;
 
-const Quiz1 = () => {
+const Quiz2 = () => {
     return (
         <Container>
             <Home/>
@@ -17,4 +17,4 @@ const Quiz1 = () => {
     );
 };
 
-export default Quiz1;
+export default Quiz2;

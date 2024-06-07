@@ -1,5 +1,6 @@
 import React from "react";
 import { TouchableOpacity, Text } from "react-native";
+import { router } from 'expo-router';
 
 const MyButton = (props) => {
     return(
@@ -12,15 +13,11 @@ const MyButton = (props) => {
                 alignItems: 'center',
                 justifyContent: 'center',
             }}
-            onPress={() => {props.onPress()}}
+            onPress={() => {router.replace(props.name);}}
         >
-            <Text style = {{color: 'white', fontSize: 24}}>{props.title}</Text>
+            <Text style = {{color: 'white', fontSize: 24}}>다음문제</Text>
         </TouchableOpacity>
     );
-};
-
-MyButton.defaultProps = {
-    title: '확인',
 };
 
 export default MyButton;

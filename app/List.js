@@ -20,6 +20,13 @@ const List = () => {
                     문제풀기
                 </Link>
             </TouchableOpacity>
+            <TouchableOpacity>
+                <Link 
+                    style={{borderRadius: 10, padding: 20, textAlign: 'center', color: '#fff', backgroundColor: '#000',fontSize:30}} 
+                    href='./LJH/Quiz2/Quiz2'>
+                    문제풀기
+                </Link>
+            </TouchableOpacity>
         </Container>
     );
 };
