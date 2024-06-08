@@ -33,6 +33,7 @@ const ImageClick = (imageName) => {
 const Home = () => {
   return (
     <Container>
+      <Text>변비에 좋은 식품을 찾아보세요.</Text>
       <Row>
       <Column>
         <ImageContainer>
