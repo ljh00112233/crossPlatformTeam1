@@ -17,9 +17,9 @@ const StyledInput = styled.TextInput.attrs(({ theme }) => ({
 const Input = ({ placeholder, value, onChangeText, price }) => {
     const b = () => {
         if(price == value){
-            alert('correct');
+            alert('정답입니다!');
         }else{
-            alert('wrong');
+            alert('오답입니다...');
         };
     };
 
