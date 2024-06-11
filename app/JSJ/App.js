@@ -11,7 +11,7 @@ export default function App() {
       <SelectionGrid />
       <View style={{flexDirection: 'row'}}>
         <MyButtonPrev name={'../List'}></MyButtonPrev>
-        <MyButton name={'../../JSJ/App'}></MyButton>
+        <MyButton name={'../../PJH/App'}></MyButton>
       </View>
     </View>
   );
