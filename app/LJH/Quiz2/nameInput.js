@@ -33,21 +33,21 @@ const Input = ({ placeholder, value, onChangeText, martName, price }) => {
     const b = () => {
         if(martName == 0){
             if(k == value){
-                alert('correct');
+                alert('정답입니다!');
             }else{
-                alert('wrong');
+                alert('오답입니다...');
             }
         }else if(martName == 1){
             if(k == value){
-                alert('correct');
+                alert('정답입니다!');
             }else{
-                alert('wrong');
+                alert('오답입니다...');
             }
         }else{
             if(k == value){
-                alert('correct');
+                alert('정답입니다!');
             }else{
-                alert('wrong');
+                alert('오답입니다...');
             }
         };
     };
