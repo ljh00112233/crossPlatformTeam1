@@ -27,13 +27,7 @@ export const Job2 = [
 ];
 
 export const allJob = [
-    {id: 1, picture : 경찰, name : '경찰'}, 
-    {id: 2, picture : 과학자, name : '과학자'}, 
-    {id: 3, picture : 농부, name : '농부'}, 
-    {id: 4, picture : 소방관, name : '소방관'},   
-    {id: 5, picture : 요리사, name : '요리사'}, 
-    {id: 6, picture : 의사, name : '의사'}, 
-    {id: 7, picture : 축구선수, name : '축구선수'}, 
-    {id: 8, picture : 판사, name : '판사'}, 
-    {id: 9, picture : 화가, name : '화가'},
+    ...Job,
+    ...Job1,
+    ...Job2,
 ]
