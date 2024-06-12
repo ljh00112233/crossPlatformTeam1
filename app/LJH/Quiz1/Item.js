@@ -28,7 +28,7 @@ const Item = () => {
             '',
             [{text: '확인', onPress: () => {
                 if(a===8){
-                    router.replace('../Quiz2/Quiz2'); //문제 끝 다음 넘어감
+                    router.replace('../Quiz2/Quiz2');
                 }else{
                     {setA(a+1); setProblem('');}
                 }
@@ -44,7 +44,7 @@ const Item = () => {
             `${allJob[a].name.toString()}`,
             [{text: '확인', onPress: () => {
                 if(a===8){
-                    router.replace('../Quiz2/Quiz2'); //문제 끝 다음 넘어감
+                    router.replace('../Quiz2/Quiz2');
                 }else{
                     {setA(a+1); setProblem('');}
                 }
@@ -66,7 +66,6 @@ const Item = () => {
         <Container>
             <Text style={viewStyles.text1}>정답을 입력하고 키패드의 완료를 눌러주세요</Text>
             <Image source={allJob[a].picture} style={[viewStyles.itemPicture, viewStyles.first]}/>
-            {/* <Text>{Job[a].name.toString()}</Text> */}
             <Input 
                 placeholder='정답을 입력하세요!' 
                 value={problem}

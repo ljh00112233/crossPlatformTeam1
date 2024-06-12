@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components/native";
 
 const StyledInput = styled.TextInput.attrs(({ theme }) => ({
@@ -29,7 +29,7 @@ const Input = ({ placeholder, value, onChangeText, price }) => {
         autoCapitalize="none"
         autoCorrect={false}
         returnKeyType="done"
-        keyboardAppearance="dark" //IOS 전용
+        keyboardAppearance="dark"
         value={value}
         onChangeText={onChangeText}
         onSubmitEditing={b}

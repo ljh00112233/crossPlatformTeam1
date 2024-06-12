@@ -14,7 +14,7 @@ const StyledInput = styled.TextInput.attrs(({ theme }) => ({
     border: 5px solid;
 `;
 
-const Input = ({ placeholder, value, onChangeText, martName, price }) => {
+const Input = ({ placeholder, value, onChangeText, martName }) => {
     const [k, setK] = useState('');
 
     useEffect(() => {

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/native";
-//import { Dimensions } from "react-native";
 import { useWindowDimensions } from "react-native";
 import PropTypes from 'prop-types';
 
@@ -19,7 +18,6 @@ const StyledInput = styled.TextInput.attrs(({ theme }) => ({
 `;
 
 const Input = ({ placeholder, value, onChangeText, onSubmitEditing }) => {
-    //const width = Dimensions.get('window').width;
     const width = useWindowDimensions().width;
     return <StyledInput
         width={width}
@@ -28,7 +26,7 @@ const Input = ({ placeholder, value, onChangeText, onSubmitEditing }) => {
         autoCapitalize="none"
         autoCorrect={false}
         returnKeyType="done"
-        keyboardAppearance="dark" //IOS 전용
+        keyboardAppearance="dark"
         value={value}
         onChangeText={onChangeText}
         onSubmitEditing={onSubmitEditing}
